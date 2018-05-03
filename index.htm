@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Title
+
+Speaker Name.red[ * ], Author 2 and Author 3
+
+<!-- Note: format 'Date' below as 1<sup>st</sup> Month Year -->
+
+.venue[CONF00 - City, Date]
+
+<img src="logos/logo-epsrc.svg" style="width: 200pt; position: absolute; top: 40pt; left: 40pt;"/>
+<img src="logos/logo-poets-underlined.svg" style="width: 220pt; position: absolute; top: 5pt; right: 40pt;"/>
+
+---
+
+layout: true
+
+<img src="logos/logo-poets.svg" class="grayscale" style="width: 120pt; position: absolute; top: 16pt; right: 40pt;"/>
+
+.footer.venue[CONF00 - City, Date]
+
+---
+
+## POETS Project Team
+
+<div id="logos">
+<img src="logos/logo-cambridge.svg"/>
+<img src="logos/logo-arm.svg"/>
+<img src="logos/logo-ccfe.jpg"/>
+<img src="logos/logo-imperial.svg"/>
+<img src="logos/logo-etx.jpg"/>
+<img src="logos/logo-cuhk.svg"/>
+<img src="logos/logo-newcastle.svg"/>
+<img src="logos/logo-img.jpg"/>
+<img src="logos/logo-maxeler.svg"/>
+<img src="logos/logo-southampton.svg"/>
+<img src="logos/logo-nmi.png"/>
+<img src="logos/logo-nag.svg"/>
+</div>
+
+---
+
+## Outline
+
+
+.active.circle[1] .big[Introduction]
+.active.vruler[ ]
+.active.circle[2] .big[Section 1]
+.active.vruler[ ]
+.active.circle[3] .big[Section 2]
+.active.vruler[ ]
+.active.circle[4] .big[Conclusion]
+
+---
+
+class: center, middle
+
+# Introduction
+
+---
+
+## Overview
+
+- Give a brief summary of what the talk is about.
+
+- Emphasize text .emph[like this]. You can also use colors such as .emph.red[red] and .emph.blue[blue].
+
+- You can also underline .underlined-red.emph.red[very important details]
+
+- Use footnote markers like this.red[ * ]
+
+.footnote[
+	.red[ * ] and don't forget to provide footnote text.
+]
+
+---
+
+## Multi-part slides
+
+- Some slides can be split into multiple parts using `--`
+
+--
+
+count: false
+
+- Set the slide property `count` to `false` to avoid incrementing the slide
+counter when advancing to the subslide.
+
+---
+
+## Spacing
+
+To leave some space between two paragraphs
+
+.spacer[ - ]
+
+use `.spacer[ - ]`.
+
+---
+
+class: center, middle
+
+# Section 1
+
+---
+
+## Figures
+
+<center>
+<img src="figures/example.svg" class="big"/>
+</center>
+
+Include big figures like this example.
+
+---
+
+## Definitions
+
+- This is one way to style definitions:
+
+.definition[My Concept] : Explain it here.
+
+.spacer[ - ]
+
+- and this is another which is be better for multiple definitions:
+
+<table>
+	<tr>
+		<td style="width: 20%; vertical-align: top;">
+			.definition[Concept 1]
+		</td>
+		<td style="width: 2%; vertical-align: top;">
+			:
+		</td>
+		</td>
+		<td>
+			Explain it here.
+		</td>
+	</tr>
+</table>
+
+.sep[ ]
+
+<table>
+	<!-- <tr style=";"><td style="height: 10pt;"></td></tr> -->
+	<tr>
+		<td style="width: 20%; vertical-align: top;">
+			.definition[Concept 2]
+		</td>
+		<td style="width: 2%; vertical-align: top;">
+			:
+		</td>
+		</td>
+		<td>
+			Explain it here.
+		</td>
+	</tr>
+</table>
+
+.sep[ ]
+
+---
+
+## List of Advantages
+
+Enumerate advantages or positive points as such:
+
+.check[Advantage 1]
+.check[Advantage 2]
+.check[Advantage 3]
+
+---
+
+## Useful Symbols
+
+I argue correctly from sound assumptions.
+
+&there4; my conclusion is correct.
+
+---
+
+## Equations
+
+Typeset equations in LaTex using the free service http://latex.codecogs.com/
+
+<center>
+<img class="equation" src="http://latex.codecogs.com/svg.latex?y=\frac{x^2}{y}" border="0"/>
+</center>
+
+where <img class="equation" src="http://latex.codecogs.com/svg.latex?x" border="0"/> is some variable.
+
+---
+
+## Tables
+
+#### Caption Here
+
+<center>
+<table class="results">
+	<tr>
+		<td>
+		</td>
+		<td>
+			.emph[Observable 1]
+		</td>
+		<td>
+			.emph[Observable 2]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Experiment 1
+		</td>
+		<td>
+			0
+		</td>
+		<td>
+			 &le; 0.0002%
+		</td>
+	</tr>
+	<tr>
+		<td style="border-bottom: none;">
+			Experiment 2
+		</td>
+		<td style="border-bottom: none;">
+			0
+		</td>
+		<td style="border-bottom: none;">
+			&le; 0.001%
+		</td>
+	</tr>
+</table>
+</center>
+
+<br/>
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({ratio: '4:3'});
+    </script>
+  </body>
+</html>
+

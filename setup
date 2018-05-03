@@ -1,0 +1,10 @@
+#!/bin/bash
+
+alias server="browser-sync start --server --index index.htm --config bs-config.js"
+
+pg() {
+	input=$1
+	output="$(basename $input .pdf).svg"
+	pcrop $input
+	inkscape $input --export-plain-svg=$output
+}
